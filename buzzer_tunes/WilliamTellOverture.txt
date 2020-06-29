@@ -1,0 +1,53 @@
+int tempo = 152;
+
+// notes in the melody:
+int melody[] = {
+  nG4,0,nG4,nG4,nG4,0,nG4,nG4,nG4,nE4,nC4,nE4,nG4,nE4,nG4,nC5,nG4,nE4,nC4,nE4,nG4,nE4,nG4,nC5,
+  nG4,0,nG4,nG4,nG4,0,nG4,nG4,nG4,0,nG4,nG4,nG4,0,nG4,nG4,
+  nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,nG4,
+  nG4,0,0,
+  
+  0,0,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nE4,nFS4,nGS4,nB3,nB3,
+  nB3,nB3,nB3,nE4,nGS4,nGS4,nFS4,nDS4,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nE4,nFS4,nGS4,nE4,nGS4,
+  nB4,nB4,nGS4,nFS4,nE4,nGS4,nE4,
+
+  nB3,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nE4,nFS4,nGS4,nB3,nB3,
+  nB3,nB3,nB3,nE4,nGS4,nGS4,nFS4,nDS4,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nE4,nFS4,nGS4,nE4,nGS4,
+  nB4,nB4,nGS4,nFS4,nE4,nGS4,nE4,
+
+  nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,0,nCS6,0,nGS5,0,nCS6,0,nGS5,0,nCS6,0,nGS5,0,nFS5,0,nE5,nDS5,nCS5,
+  nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nCS6,nGS5,nCS6,nGS5,nCS6,nB5,nAS5,nB5,nAS5,nB5,
+
+  nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,0,nCS6,0,nGS5,0,nCS6,0,nGS5,0,nCS6,0,nGS5,0,nFS5,0,nE5,nDS5,nCS5,
+  nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nGS5,nCS6,nGS5,nCS6,nGS5,nCS6,nB5,nAS5,nB5,0,
+
+  nB3,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nE4,nFS4,nGS4,nB3,nB3,
+  nB3,nB3,nB3,nE4,nGS4,nGS4,nFS4,nDS4,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nB3,nE4,nFS4,nGS4,nE4,nGS4,
+  nB4,nB4,nGS4,nFS4,nE4,nGS4,nE4,
+};
+  
+  // note durations:
+  long noteDurations[] = {
+    Q,E,S,S,Q,E,S,S,E,E,E,E,E,E,E,E,E,E,E,E,E,E,E,E,
+    Q,E,S,S,Q,E,S,S,Q,E,S,S,Q,E,S,S,
+    E,S,S,E,E,E,S,S,E,E,E,S,S,E,E,E,S,S,E,E,
+    H+H+E,E,Q,
+    
+    Q,E,S,S,E,S,S,E,S,S,E,E,E,S,S,
+    E,S,S,E,S,S,E,E,E,S,S,E,S,S,E,S,S,E,E,E,S,S,
+    Q+S,S,S,S,E,E,E,
+  
+    S,S,E,S,S,E,S,S,E,E,E,S,S,
+    E,S,S,E,S,S,E,E,E,S,S,E,S,S,E,S,S,E,E,E,S,S,
+    Q+S,S,S,S,E,E,E,
+  
+    S,S,E,S,S,E,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,E,E,E,
+    S,S,E,S,S,E,S,S,E,E,E,E,E,E,E,E,E,E,E,
+  
+    S,S,E,S,S,E,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,E,E,E,
+    S,S,E,S,S,E,S,S,E,E,E,E,E,E,E,E,Q,E,
+  
+    S,S,E,S,S,E,S,S,E,E,E,S,S,
+    E,S,S,E,S,S,E,E,E,S,S,E,S,S,E,S,S,E,E,E,S,S,
+    Q+S,S,S,S,E,E,E,
+  };
